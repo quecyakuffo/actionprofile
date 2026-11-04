@@ -32,6 +32,9 @@ jobs:
       - name: Code checkout
         uses: actions/checkout@v4
 
+      - name: Run tests on main branch
+        run: mvn test
+
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
